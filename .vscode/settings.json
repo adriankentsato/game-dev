@@ -3,5 +3,11 @@
         "-I${workspaceFolder}/libs/boost/include",
         "-I${workspaceFolder}/libs/sfml/include",
         "-std=c++17"
+    ],
+    "clangd.arguments": [
+        "--inlay-hints=auto",
+        "--background-index",
+        "--clang-tidy",
+        "--suggest-missing-includes"
     ]
 }

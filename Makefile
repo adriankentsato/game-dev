@@ -12,7 +12,7 @@ BOOST_LIB_DIR := libs/boost/lib
 SFML_LIB_DIR := libs/sfml/lib
 INCLUDE_DIRS := -I$(SRC_DIR) -I$(BOOST_INCLUDE_DIR) -I$(SFML_INCLUDE_DIR)
 LIB_DIRS := -L$(BOOST_LIB_DIR) -L$(SFML_LIB_DIR)
-LIBS := -ludev -lX11 -lXcursor -lXrandr -lXi -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lboost_system -lboost_filesystem -lboost_thread
+LIBS := -lGL -lGLU -ludev -lX11 -lXcursor -lXrandr -lXi -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lboost_system -lboost_filesystem -lboost_thread
 
 # Find all source files
 SOURCES := $(wildcard $(SRC_DIR)/**/*.cpp) $(wildcard $(SRC_DIR)/*.cpp)
